@@ -3,18 +3,29 @@
 # WALLET FOR CRYPTO
 ############################ 
 """
-from bitcoinlib.wallets import HDWallet, wallet_delete
-from bitcoinlib.mnemonic import Mnemonic
-
+from pywallet import wallet
 
 class crypto():
     def __init__(self):
-        self.passphrase = Mnemonic().generate()
-        print(self.passphrase)
-        pass
+        self.passphrase = wallet.generate_mnemonic()
+        # print(self.passphrase)
 
-    def create_btc(self):
-        wallet = HDWallet.create(
-            "mWallet1", keys=self.passphrase, network='bitcoin')
-        key1 = wallet.new_key()
-        print(key1.address)
+    def create_BTC(self):
+        wallet = wallet.create_wallet(network="BTC", seed=self.passphrase, children=0)
+    def create_BTG(self):
+        wallet_BTG = wallet.create_wallet(network="BTG", seed=self.passphrase, children=0)
+        
+    def create_BCH(self):
+        wallet_BTG = wallet.create_wallet(network="BCH", seed=self.passphrase, children=0)
+    
+    def create_ETH(self):
+        wallet_BTG = wallet.create_wallet(network="BCH", seed=self.passphrase, children=0)
+        
+    def create_ETH(self):
+        wallet_BTG = wallet.create_wallet(network="LTC", seed=self.passphrase, children=0)
+    
+    def create_ETH(self):
+        wallet_BTG = wallet.create_wallet(network="DASH", seed=self.passphrase, children=0)
+        
+    def create_ETH(self):
+        wallet_BTG = wallet.create_wallet(network="DOGE", seed=self.passphrase, children=0)
