@@ -16,7 +16,7 @@ def setup_db(app, database_path=database_path):
     db.init_app(app)
     migrate = Migrate(app, db)
 
-class User(db.Model):  
+class User(db.Model):   
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
