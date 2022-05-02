@@ -6,4 +6,4 @@ exchange mobile money mada - crypto. @vita malagasy solutions
 2. Web3.py // crypto
 3. kafka python: to handle massive transactions
 4. ory keto kratos, kyc managment
-5. dart display
+5. flutter display
