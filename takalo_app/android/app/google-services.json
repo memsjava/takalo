@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "74041916249",
+    "project_id": "takalo-crypto",
+    "storage_bucket": "takalo-crypto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74041916249:android:55a035d4bd91eec91fea48",
+        "android_client_info": {
+          "package_name": "com.example.takalo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74041916249-utbd9f0hhitipj7pbvv3aajkdmsn9f2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8Gk9HdjDlGFzHIdUKMjFVgxfOQRVf1Ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74041916249-utbd9f0hhitipj7pbvv3aajkdmsn9f2f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "74041916249-v9khdvkj120ppbs1ccbhqjjfs2stttl3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.takaloApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
