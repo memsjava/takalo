@@ -5,5 +5,4 @@ exchange mobile money mada - crypto. @vita malagasy solutions
 1. Flask based api and core backend
 2. Web3.py // crypto
 3. kafka python: to handle massive transactions
-4. ory keto kratos, kyc managment
-5. flutter display
+4. flutter display, firebase user management
