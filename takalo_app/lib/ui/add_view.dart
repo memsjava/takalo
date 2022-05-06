@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:takalo_app/net/flutterfire.dart';
 
 class AddView extends StatefulWidget {
   const AddView({Key? key}) : super(key: key);
@@ -48,7 +49,11 @@ class _AddViewState extends State<AddView> {
               borderRadius: BorderRadius.circular(15.0), color: Colors.white),
           child: MaterialButton(
             onPressed: () async {
-              // Todo
+              // var isAdded =
+              await addCoin(dropdownValue, _amountController.text);
+              // if (isAdded) {
+              Navigator.of(context).pop();
+              // }
             },
             child: const Text("Add"),
           ),
