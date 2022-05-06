@@ -65,10 +65,6 @@ class _HomeViewState extends State<HomeView> {
             }
             return ListView(
               children: snapshot.data!.docs.map((document) {
-                var data = jsonDecode(document.data().toString());
-                if (kDebugMode) {
-                  print(data);
-                }
                 return Padding(
                     padding: const EdgeInsets.only(
                         top: 5.0, left: 15.0, right: 15.0),
@@ -87,10 +83,10 @@ class _HomeViewState extends State<HomeView> {
                           Text("Coin Name :${document.id}",
                               style: const TextStyle(
                                   color: Colors.white, fontSize: 18.0)),
-                          Text("Amount : ${data}",
-                              style: const TextStyle(color: Colors.white)),
-                          // Text(
-                          //     "\$${getValue(document.id, double.parse(document.data()) )}"),
+                          // Text("Amount : ${document['Amount']}",
+                          //     style: const TextStyle(color: Colors.white)),
+                          Text(
+                              "\$${getValue(document.id, double.parse(document['Amount'].toString()))}"),
                           // Text("Coin Name :"),
                           // Text("Amount :")
                           IconButton(
