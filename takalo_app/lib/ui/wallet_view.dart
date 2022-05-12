@@ -136,6 +136,6 @@ class _WalletHomeState extends State<WalletHome> {
   }
 
   void openHomePage() {
-    Navigator.pushNamed(context, '/home');
+    Navigator.pushNamed(context, '/walletHome');
   }
 }

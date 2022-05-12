@@ -68,6 +68,8 @@ flutter:
   assets:
     - asset/images/sidebar.png
     - asset/images/cloud.png
+    - asset/images/logo.png
+    - asset/images/qr_scan.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -9,6 +9,7 @@ import 'package:takalo_app/reducer/reducers.dart';
 import 'package:takalo_app/ui/authentication.dart';
 import 'package:takalo_app/ui/cart_list.dart';
 import 'package:takalo_app/ui/homapage.dart';
+import 'package:takalo_app/ui/wallet_home.dart';
 import 'package:takalo_app/ui/wallet_view.dart';
 // import 'package:takalo_app/ui/uploadimage.dart';
 
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
           '/home': (context) => HomePage(),
           '/cart': (context) => CartList(),
           '/wallet': (context) => const WalletHome(),
+          '/walletHome': (context) => HomeWallet(),
           // '/upload': (context) => UploadImageScreen(),
         },
       ),
