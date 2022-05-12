@@ -9,6 +9,7 @@ import 'package:takalo_app/reducer/reducers.dart';
 import 'package:takalo_app/ui/authentication.dart';
 import 'package:takalo_app/ui/cart_list.dart';
 import 'package:takalo_app/ui/homapage.dart';
+import 'package:takalo_app/ui/wallet_view.dart';
 // import 'package:takalo_app/ui/uploadimage.dart';
 
 void main() async {
@@ -50,11 +51,13 @@ class MyApp extends StatelessWidget {
     return StoreProvider<AppState>(
       store: store,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Takalo crypto - mobile money',
         home: const Authentication(),
         routes: {
           '/home': (context) => HomePage(),
           '/cart': (context) => CartList(),
+          '/wallet': (context) => const WalletHome(),
           // '/upload': (context) => UploadImageScreen(),
         },
       ),
