@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:takalo_app/net/flutterfire.dart';
+import 'package:takalo_app/application/net/flutterfire.dart';
 
 class AddView extends StatefulWidget {
   const AddView({Key? key}) : super(key: key);

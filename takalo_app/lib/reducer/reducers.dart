@@ -1,5 +1,5 @@
-import 'package:takalo_app/model/app_state.dart';
-import 'package:takalo_app/model/cart_item.dart';
+import 'package:takalo_app/presentation/core/model/app_state.dart';
+import 'package:takalo_app/presentation/core/model/cart_item.dart';
 import 'package:takalo_app/reducer/actions.dart';
 
 AppState appStateReducers(AppState state, dynamic action) {

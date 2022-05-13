@@ -1,4 +1,4 @@
-import 'package:takalo_app/model/cart_item.dart';
+import 'cart_item.dart';
 
 class AppState {
   List<CartItem> cartItemList = <CartItem>[];

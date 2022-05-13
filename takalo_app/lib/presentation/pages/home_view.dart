@@ -4,8 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:takalo_app/net/api_methods.dart';
-import 'package:takalo_app/net/flutterfire.dart';
+import 'package:takalo_app/application/net/api_methods.dart';
+import 'package:takalo_app/application/net/flutterfire.dart';
 
 import 'add_view.dart';
 

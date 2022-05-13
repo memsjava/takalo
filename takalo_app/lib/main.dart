@@ -2,15 +2,17 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
-import 'package:takalo_app/model/app_state.dart';
-import 'package:takalo_app/model/cart_item.dart';
+import 'package:takalo_app/presentation/core/model/app_state.dart';
+import 'package:takalo_app/presentation/core/model/cart_item.dart';
+import 'package:takalo_app/presentation/pages/HomeWithSidebar.dart';
+import 'package:takalo_app/presentation/pages/authentication.dart';
+import 'package:takalo_app/presentation/pages/cart_list.dart';
+import 'package:takalo_app/presentation/pages/homapage.dart';
+import 'package:takalo_app/presentation/pages/wallet_home.dart';
+import 'package:takalo_app/presentation/pages/wallet_view.dart';
+
 import 'package:takalo_app/reducer/reducers.dart';
 
-import 'package:takalo_app/ui/authentication.dart';
-import 'package:takalo_app/ui/cart_list.dart';
-import 'package:takalo_app/ui/homapage.dart';
-import 'package:takalo_app/ui/wallet_home.dart';
-import 'package:takalo_app/ui/wallet_view.dart';
 // import 'package:takalo_app/ui/uploadimage.dart';
 
 void main() async {
@@ -60,6 +62,7 @@ class MyApp extends StatelessWidget {
           '/cart': (context) => CartList(),
           '/wallet': (context) => const WalletHome(),
           '/walletHome': (context) => HomeWallet(),
+          '/homePage': (context) => HomeWithSidebar(),
           // '/upload': (context) => UploadImageScreen(),
         },
       ),

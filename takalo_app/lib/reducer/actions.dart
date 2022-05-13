@@ -1,4 +1,4 @@
-import 'package:takalo_app/model/cart_item.dart';
+import 'package:takalo_app/presentation/core/model/cart_item.dart';
 
 class AddCartItemAction {
   final CartItem cartItem;

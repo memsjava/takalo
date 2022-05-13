@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:takalo_app/model/app_state.dart';
-import 'package:takalo_app/model/cart_item.dart';
+
 import 'package:takalo_app/reducer/actions.dart';
+
+import '../core/model/app_state.dart';
+import '../core/model/cart_item.dart';
 
 class HomePage extends StatefulWidget {
   @override

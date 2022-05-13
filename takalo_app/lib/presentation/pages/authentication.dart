@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_final_fields
 
 import 'package:flutter/material.dart';
-import 'package:takalo_app/net/flutterfire.dart';
-import 'package:takalo_app/ui/home_view.dart';
+import 'package:takalo_app/application/net/flutterfire.dart';
+
+import 'home_view.dart';
 
 class Authentication extends StatefulWidget {
   const Authentication({Key? key}) : super(key: key);
