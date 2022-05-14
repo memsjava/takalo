@@ -54,7 +54,7 @@ class _AuthenticationState extends State<Authentication> {
                         decoration: const InputDecoration(
                             hintText: 'something@gmail.com',
                             labelText: 'Email',
-                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(),
                             hintStyle: TextStyle(color: Colors.yellow),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
@@ -67,7 +67,7 @@ class _AuthenticationState extends State<Authentication> {
                         decoration: const InputDecoration(
                             hintText: 'password',
                             labelText: 'Password',
-                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(),
                             hintStyle: TextStyle(color: Colors.yellow),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
@@ -81,7 +81,7 @@ class _AuthenticationState extends State<Authentication> {
                     height: 45,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
-                        color: Colors.blueGrey),
+                        color: Colors.purple),
                     child: MaterialButton(
                       onPressed: () async {
                         bool shouldNavigate =
@@ -94,7 +94,14 @@ class _AuthenticationState extends State<Authentication> {
                           );
                         }
                       },
-                      child: const Text("Login"),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 15,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
