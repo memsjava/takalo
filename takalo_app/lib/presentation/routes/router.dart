@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:takalo_app/presentation/pages/HomeWithSidebar.dart';
-import 'package:takalo_app/presentation/pages/authentication.dart';
+import 'package:takalo_app/presentation/pages/login.dart';
 import 'package:takalo_app/presentation/pages/cart_list.dart';
 import 'package:takalo_app/presentation/pages/homapage.dart';
 import 'package:takalo_app/presentation/pages/wallet_home.dart';

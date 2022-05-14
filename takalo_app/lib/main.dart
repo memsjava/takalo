@@ -5,7 +5,7 @@ import 'package:redux/redux.dart';
 import 'package:takalo_app/presentation/core/model/app_state.dart';
 import 'package:takalo_app/presentation/core/model/cart_item.dart';
 import 'package:takalo_app/presentation/pages/HomeWithSidebar.dart';
-import 'package:takalo_app/presentation/pages/authentication.dart';
+import 'package:takalo_app/presentation/pages/login.dart';
 import 'package:takalo_app/presentation/pages/cart_list.dart';
 import 'package:takalo_app/presentation/pages/homapage.dart';
 import 'package:takalo_app/presentation/pages/wallet_home.dart';
