@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_final_fields
-
 import 'package:flutter/material.dart';
 import 'package:takalo_app/application/net/flutterfire.dart';
 
@@ -37,29 +36,35 @@ class _AuthenticationState extends State<Authentication> {
                     height: 15,
                   ),
                   Text(
-                    "Sign In to get Started",
+                    "takalo crypto",
                     style: TextStyle(
                         color: Colors.blue,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600),
+                        fontSize: 16,
+                        fontFamily: "Ubuntu",
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 48,
                   ),
                   Container(
-                    width: 250,
+                    width: 320,
                     child: Column(children: [
                       TextFormField(
                         controller: _emailField,
                         decoration: const InputDecoration(
                             hintText: 'something@gmail.com',
                             labelText: 'Email',
-                            border: OutlineInputBorder(),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.blueAccent, width: 1.0),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
+                            ),
                             hintStyle: TextStyle(color: Colors.yellow),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
                       SizedBox(
-                        height: 15,
+                        height: 16,
                       ),
                       TextFormField(
                         controller: _passwordField,
@@ -67,20 +72,25 @@ class _AuthenticationState extends State<Authentication> {
                         decoration: const InputDecoration(
                             hintText: 'password',
                             labelText: 'Password',
-                            border: OutlineInputBorder(),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.blueAccent, width: 1.0),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
+                            ),
                             hintStyle: TextStyle(color: Colors.yellow),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
                     ]),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 32,
                   ),
                   Container(
-                    width: 250,
-                    height: 45,
+                    width: 320,
+                    height: 48,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                        borderRadius: BorderRadius.circular(8.0),
                         color: Colors.purple),
                     child: MaterialButton(
                       onPressed: () async {
@@ -98,7 +108,7 @@ class _AuthenticationState extends State<Authentication> {
                         "Login",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 15,
+                          fontSize: 16,
                           color: Colors.white,
                         ),
                       ),
@@ -108,10 +118,10 @@ class _AuthenticationState extends State<Authentication> {
                     height: 45,
                   ),
                   Container(
-                    width: 250,
-                    height: 45,
+                    width: 320,
+                    height: 48,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                        borderRadius: BorderRadius.circular(8.0),
                         color: Colors.white),
                     child: MaterialButton(
                       onPressed: () async {

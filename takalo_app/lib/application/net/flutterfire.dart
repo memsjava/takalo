@@ -2,6 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
+class AuthenticationProvider {
+  final FirebaseAuth firebaseAuth;
+  //FirebaseAuth instance
+  AuthenticationProvider(this.firebaseAuth);
+  Stream<User?> get authState => firebaseAuth.idTokenChanges();
+}
+
 Future<bool> signIn(String email, String password) async {
   try {
     await FirebaseAuth.instance
