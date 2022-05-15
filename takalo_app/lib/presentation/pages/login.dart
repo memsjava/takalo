@@ -59,7 +59,7 @@ class _AuthenticationState extends State<Authentication> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
                             ),
-                            hintStyle: TextStyle(color: Colors.yellow),
+                            hintStyle: TextStyle(color: Colors.orange),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
                       SizedBox(
@@ -77,7 +77,7 @@ class _AuthenticationState extends State<Authentication> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
                             ),
-                            hintStyle: TextStyle(color: Colors.yellow),
+                            hintStyle: TextStyle(color: Colors.orange),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
                     ]),

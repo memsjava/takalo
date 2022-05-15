@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/pages/cover.dart';
+import 'package:takalo_app/presentation/pages/home.dart';
 
 class TakaloAddBar extends StatelessWidget {
   const TakaloAddBar({Key? key}) : super(key: key);
@@ -15,6 +16,19 @@ class TakaloAddBar extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              Container(
+                height: 60,
+                width: 60,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => WalletHome()),
+                    );
+                  },
+                  child: Icon(Icons.arrow_back),
+                ),
+              ),
               Text(
                 "Deposit",
                 style: TextStyle(

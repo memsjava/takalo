@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/core/widgets/addbar.dart';
@@ -10,8 +11,9 @@ class AddView extends StatefulWidget {
 }
 
 class _AddViewState extends State<AddView> {
-  List<String> coins = ["bitcoin", "litecoin", "ethereum", "dogecoin"];
-  String dropdownValue = "bitcoin";
+  List<String> coins = ["orange", "telma", "airtel"];
+  String dropdownValue = "orange";
+  String accountSelected = "mm";
   final TextEditingController _amountController = TextEditingController();
 
   @override
@@ -27,12 +29,12 @@ class _AddViewState extends State<AddView> {
             Text(
               "Choose an account",
               style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 20,
                   fontWeight: FontWeight.w800,
                   fontFamily: 'avenir'),
             ),
             SizedBox(
-              height: 32,
+              height: 24,
             ),
             Container(
               padding: EdgeInsets.all(16),
@@ -50,6 +52,16 @@ class _AddViewState extends State<AddView> {
                           image: AssetImage('asset/images/mm.png'),
                           fit: BoxFit.contain),
                     ),
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          accountSelected = "mm";
+                        });
+                        if (kDebugMode) {
+                          print("mobile money deposit");
+                        }
+                      },
+                    ),
                   ),
                   SizedBox(
                     width: 32,
@@ -65,12 +77,32 @@ class _AddViewState extends State<AddView> {
                           image: AssetImage('asset/images/cloud.png'),
                           fit: BoxFit.contain),
                     ),
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          accountSelected = "crypto";
+                        });
+                        if (kDebugMode) {
+                          print("Crypto deposit");
+                        }
+                      },
+                    ),
                   ),
                 ],
               ),
             ),
             SizedBox(
               height: 32,
+            ),
+            Text(
+              "Enter Details:",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                  fontFamily: 'avenir'),
+            ),
+            SizedBox(
+              height: 16,
             ),
             Container(
               padding: EdgeInsets.all(16),
@@ -82,15 +114,6 @@ class _AddViewState extends State<AddView> {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Enter Details:",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
                     DropdownButton(
                       value: dropdownValue,
                       onChanged: (String? value) {
@@ -110,7 +133,6 @@ class _AddViewState extends State<AddView> {
                       child: TextFormField(
                         controller: _amountController,
                         decoration: const InputDecoration(labelText: "amount"),
-                        // keyboardType: TextInputType.text,
                       ),
                     ),
                     SizedBox(
@@ -145,18 +167,19 @@ class _AddViewState extends State<AddView> {
             SizedBox(
               height: 24,
             ),
-            Container(
-              padding: EdgeInsets.all(16),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: Color(0xfff1f3f6),
-                // borderRadius: BorderRadius.all(Radius.circular(20)),
-              ),
-              child: Text(
-                "Instruction:",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-              ),
-            )
+            Text(
+              "Instruction:",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                  fontFamily: 'avenir'),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              "Instruction1. .....",
+            ),
           ],
         ),
       ),

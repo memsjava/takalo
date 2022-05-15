@@ -35,7 +35,7 @@ class _walletHomeState extends State<walletHome> {
             Text(
               "Account Overview",
               style: TextStyle(
-                  fontSize: 21,
+                  fontSize: 20,
                   fontWeight: FontWeight.w800,
                   fontFamily: 'avenir'),
             ),
