@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Avatara extends StatelessWidget {
-  var img;
+  @override
+  String img;
+  @override
+  String name;
 
-  Avatara({Key? key, required String img}) : super(key: key);
+  Avatara({Key? key, required String name, required String img})
+      : this.img = img,
+        this.name = name;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +26,11 @@ class Avatara extends StatelessWidget {
                   fit: BoxFit.contain),
               border: Border.all(color: Colors.black, width: 2)),
         ),
+        Text(
+          name,
+          style: TextStyle(
+              fontSize: 16, fontFamily: 'avenir', fontWeight: FontWeight.w700),
+        )
       ],
     );
   }

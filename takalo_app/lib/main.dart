@@ -6,6 +6,7 @@ import 'package:redux/redux.dart';
 import 'package:takalo_app/presentation/core/model/app_state.dart';
 import 'package:takalo_app/presentation/core/model/cart_item.dart';
 import 'package:takalo_app/presentation/pages/cover.dart';
+import 'package:takalo_app/presentation/pages/deposit.dart';
 import 'package:takalo_app/presentation/pages/login.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
 
@@ -59,7 +60,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => const CoverHome(),
           '/login': (context) => const Authentication(),
           '/home': (context) => WalletHome(),
-          // '/homepage': (context) => HomePage(),
+          '/deposit': (context) => const AddView(),
           // '/cart': (context) => CartList(),
           // '/upload': (context) => UploadImageScreen(),
         },

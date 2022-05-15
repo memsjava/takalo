@@ -79,9 +79,9 @@ class _CoverHome extends State<CoverHome> {
                                   fit: BoxFit.contain)),
                         ),
                         Text(
-                          "eWalle",
+                          "Takalo Crypto",
                           style: TextStyle(
-                              fontSize: 50,
+                              fontSize: 32,
                               fontFamily: 'ubuntu',
                               fontWeight: FontWeight.w600),
                         ),
@@ -89,7 +89,7 @@ class _CoverHome extends State<CoverHome> {
                           height: 10,
                         ),
                         Text(
-                          "Open An Account For \nDigital E-Wallet Solutions. \nInstant Payouts.\n\nJoin For Free",
+                          "Fanakalozana Ariary-crypto \nElectronic Wallet .\n\nJoin For Free",
                           style: TextStyle(color: Colors.grey),
                         )
                       ],

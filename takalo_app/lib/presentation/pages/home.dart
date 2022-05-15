@@ -1,7 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:takalo_app/application/net/api_firebase.dart';
-import 'package:takalo_app/presentation/pages/cover.dart';
+import 'package:takalo_app/presentation/core/widgets/appbar.dart';
+import 'package:takalo_app/presentation/core/widgets/avatar.dart';
 import 'package:takalo_app/presentation/pages/deposit.dart';
 
 class WalletHome extends StatelessWidget {
@@ -29,73 +28,7 @@ class _walletHomeState extends State<walletHome> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                          image: AssetImage('asset/images/logo.png'),
-                        )),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        "Takalo crypto",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'ubuntu',
-                            fontSize: 25),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      InkWell(
-                        child: PopupMenuButton<int>(
-                          offset: const Offset(0, 48),
-                          child: Container(
-                            margin: EdgeInsets.all(17),
-                            height: 30,
-                            width: 30,
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image:
-                                        AssetImage('asset/images/menu.png'))),
-                          ),
-                          itemBuilder: (context) => [
-                            PopupMenuItem<int>(
-                              value: 0,
-                              child: Row(children: [
-                                Icon(
-                                  Icons.logout,
-                                  color: Colors.red,
-                                ),
-                                const SizedBox(
-                                  width: 7,
-                                ),
-                                Text("Sign Out"),
-                              ]),
-                            ),
-                          ],
-                          onSelected: (item) => SelectedItem(context, item),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+            TakaloAppBar(),
             SizedBox(
               height: 20,
             ),
@@ -197,9 +130,15 @@ class _walletHomeState extends State<walletHome> {
                       size: 40,
                     ),
                   ),
-                  avatarWidget("avatar1", "Mike"),
-                  avatarWidget("avatar2", "Joseph"),
-                  avatarWidget("avatar3", "Ashley"),
+                  Avatara(
+                    img: 'avatar1',
+                    name: 'Mike',
+                  ),
+                  Avatara(
+                    img: 'avatar2',
+                    name: 'Joseph',
+                  ),
+                  Avatara(img: 'avatar3', name: 'Ashley'),
                 ],
               ),
             ),
@@ -228,14 +167,14 @@ class _walletHomeState extends State<walletHome> {
                 crossAxisCount: 4,
                 childAspectRatio: 0.7,
                 children: [
-                  serviceWidget("sendMoney", "Send\nMoney"),
-                  serviceWidget("receiveMoney", "Receive\nMoney"),
-                  serviceWidget("phone", "Mobile\nRecharge"),
-                  serviceWidget("electricity", "Electricity\nBill"),
-                  serviceWidget("tag", "Cashback\nOffer"),
-                  serviceWidget("movie", "Movie\nTicket"),
-                  serviceWidget("flight", "Flight\nTicket"),
-                  serviceWidget("more", "More\n"),
+                  Avatara(img: 'sendMoney', name: 'Send\nMoney'),
+                  Avatara(img: 'receiveMoney', name: 'Receive\nMoney'),
+                  Avatara(img: 'phone', name: 'Mobile\nRecharge'),
+                  Avatara(img: 'electricity', name: 'Electricity\nBill'),
+                  Avatara(img: 'tag', name: 'Cashback\nOffer'),
+                  Avatara(img: 'movie', name: 'Movie\nTicket'),
+                  Avatara(img: 'flight', name: 'Flight\nTicket'),
+                  Avatara(img: 'more', name: 'More\n'),
                 ],
               ),
             )
@@ -243,25 +182,6 @@ class _walletHomeState extends State<walletHome> {
         ),
       ),
     );
-  }
-
-  Future<void> SelectedItem(BuildContext context, item) async {
-    switch (item) {
-      case 0:
-        if (kDebugMode) {
-          print("User Logged out");
-        }
-        bool isloggedOut = await signOut();
-        if (isloggedOut) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => CoverHome()),
-          );
-        }
-        // Navigator.of(context)
-        //     .push(MaterialPageRoute(builder: (context) => SettingPage()));
-        break;
-    }
   }
 
   Column serviceWidget(String img, String name) {
@@ -299,40 +219,6 @@ class _walletHomeState extends State<walletHome> {
           textAlign: TextAlign.center,
         )
       ],
-    );
-  }
-
-  Container avatarWidget(String img, String name) {
-    return Container(
-      margin: EdgeInsets.only(right: 10),
-      height: 150,
-      width: 120,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(15)),
-          color: Color(0xfff1f3f6)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Container(
-            height: 60,
-            width: 60,
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-                image: DecorationImage(
-                    image: AssetImage('asset/images/$img.png'),
-                    fit: BoxFit.contain),
-                border: Border.all(color: Colors.black, width: 2)),
-          ),
-          Text(
-            name,
-            style: TextStyle(
-                fontSize: 16,
-                fontFamily: 'avenir',
-                fontWeight: FontWeight.w700),
-          )
-        ],
-      ),
     );
   }
 }
