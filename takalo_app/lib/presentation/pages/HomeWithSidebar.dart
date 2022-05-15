@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'wallet_home.dart';
+import 'home.dart';
 
 class HomeWithSidebar extends StatelessWidget {
   @override
@@ -150,7 +150,7 @@ class _homeWithSidebarState extends State<homeWithSidebar>
                     color: Colors.white),
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(40)),
-                  child: HomeWallet(),
+                  child: WalletHome(),
                 ),
               ),
             ),

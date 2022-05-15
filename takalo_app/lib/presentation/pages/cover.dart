@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WalletHome extends StatefulWidget {
-  const WalletHome({Key? key}) : super(key: key);
+class CoverHome extends StatefulWidget {
+  const CoverHome({Key? key}) : super(key: key);
 
   @override
-  _WalletHomeState createState() => _WalletHomeState();
+  _CoverHome createState() => _CoverHome();
 }
 
-class _WalletHomeState extends State<WalletHome> {
+class _CoverHome extends State<CoverHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -108,7 +108,7 @@ class _WalletHomeState extends State<WalletHome> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Sign Up",
+                            "Sign In",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.w700),
                           ),
@@ -139,6 +139,6 @@ class _WalletHomeState extends State<WalletHome> {
   }
 
   void openHomePage() {
-    Navigator.pushNamed(context, '/homePage');
+    Navigator.pushNamed(context, '/login');
   }
 }

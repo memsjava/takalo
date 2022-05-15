@@ -22,6 +22,18 @@ Future<bool> signIn(String email, String password) async {
   }
 }
 
+Future<bool> signOut() async {
+  try {
+    await FirebaseAuth.instance.signOut();
+    return true;
+  } catch (e) {
+    if (kDebugMode) {
+      print(e.toString());
+    }
+    return false;
+  }
+}
+
 Future<bool> register(String email, String password) async {
   try {
     await FirebaseAuth.instance

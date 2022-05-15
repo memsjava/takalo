@@ -5,12 +5,9 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:takalo_app/presentation/core/model/app_state.dart';
 import 'package:takalo_app/presentation/core/model/cart_item.dart';
-import 'package:takalo_app/presentation/pages/HomeWithSidebar.dart';
+import 'package:takalo_app/presentation/pages/cover.dart';
 import 'package:takalo_app/presentation/pages/login.dart';
-import 'package:takalo_app/presentation/pages/cart_list.dart';
-import 'package:takalo_app/presentation/pages/homapage.dart';
-import 'package:takalo_app/presentation/pages/wallet_home.dart';
-import 'package:takalo_app/presentation/pages/wallet_view.dart';
+import 'package:takalo_app/presentation/pages/home.dart';
 
 import 'package:takalo_app/reducer/reducers.dart';
 
@@ -26,6 +23,7 @@ void main() async {
   ];
 
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(
       options: const FirebaseOptions(
           apiKey: "AIzaSyDCQS2M5Z8xD0z4kvwLbpcqpH8bV5fzA9w",
@@ -58,16 +56,14 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Takalo crypto - mobile money',
         routes: {
-          '/': (context) => const WalletHome(),
+          '/': (context) => const CoverHome(),
           '/login': (context) => const Authentication(),
-          '/home': (context) => HomePage(),
-          '/cart': (context) => CartList(),
-          '/walletHome': (context) => HomeWallet(),
-          '/homePage': (context) => HomeWithSidebar(),
+          '/home': (context) => WalletHome(),
+          // '/homepage': (context) => HomePage(),
+          // '/cart': (context) => CartList(),
           // '/upload': (context) => UploadImageScreen(),
         },
-        initialRoute:
-            FirebaseAuth.instance.currentUser == null ? "/" : "/walletHome",
+        initialRoute: FirebaseAuth.instance.currentUser == null ? "/" : "/home",
       ),
     );
   }
