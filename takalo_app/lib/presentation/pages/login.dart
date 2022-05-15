@@ -1,13 +1,10 @@
 // ignore_for_file: prefer_final_fields
 import 'package:flutter/material.dart';
-import 'package:takalo_app/application/net/flutterfire.dart';
+import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
 
 class Authentication extends StatefulWidget {
   const Authentication({Key? key}) : super(key: key);
-
-  // https://ksdvigmajnbmbedidljb.supabase.co
-  // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzZHZpZ21ham5ibWJlZGlkbGpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTI2MDQ5OTEsImV4cCI6MTk2ODE4MDk5MX0.LvszI85NeM02Fv06-YtrWzQ2OOjschilCGM_4XY5TUk
 
   @override
   _AuthenticationState createState() => _AuthenticationState();

@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:takalo_app/application/net/flutterfire.dart';
+import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/pages/cover.dart';
+import 'package:takalo_app/presentation/pages/deposit.dart';
 
 class WalletHome extends StatelessWidget {
   @override
@@ -137,15 +138,23 @@ class _walletHomeState extends State<walletHome> {
                     ],
                   ),
                   Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle, color: Color(0xffffac30)),
-                    child: Icon(
-                      Icons.add,
-                      size: 30,
-                    ),
-                  )
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle, color: Color(0xffffac30)),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const AddView()),
+                          );
+                        },
+                        child: Icon(
+                          Icons.add,
+                          size: 30,
+                        ),
+                      ))
                 ],
               ),
             ),
