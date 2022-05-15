@@ -118,8 +118,8 @@ class _walletHomeState extends State<walletHome> {
               child: Row(
                 children: [
                   Container(
-                    height: 70,
-                    width: 70,
+                    height: 72,
+                    width: 72,
                     margin: EdgeInsets.only(right: 20),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
@@ -181,44 +181,6 @@ class _walletHomeState extends State<walletHome> {
           ],
         ),
       ),
-    );
-  }
-
-  Column serviceWidget(String img, String name) {
-    return Column(
-      children: [
-        Expanded(
-          child: InkWell(
-            onTap: () {},
-            child: Container(
-              margin: EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(20)),
-                color: Color(0xfff1f3f6),
-              ),
-              child: Center(
-                child: Container(
-                  margin: EdgeInsets.all(25),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('asset/images/$img.png'))),
-                ),
-              ),
-            ),
-          ),
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Text(
-          name,
-          style: TextStyle(
-            fontFamily: 'avenir',
-            fontSize: 14,
-          ),
-          textAlign: TextAlign.center,
-        )
-      ],
     );
   }
 }

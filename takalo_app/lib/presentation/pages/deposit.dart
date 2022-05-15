@@ -34,10 +34,10 @@ class _AddViewState extends State<AddView> {
                   fontFamily: 'avenir'),
             ),
             SizedBox(
-              height: 24,
+              height: 16,
             ),
             Container(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -92,7 +92,7 @@ class _AddViewState extends State<AddView> {
               ),
             ),
             SizedBox(
-              height: 32,
+              height: 20,
             ),
             Text(
               "Enter Details:",
