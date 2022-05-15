@@ -62,6 +62,7 @@ class _walletHomeState extends State<walletHome> {
                     children: [
                       InkWell(
                         child: PopupMenuButton<int>(
+                          offset: const Offset(0, 48),
                           child: Container(
                             margin: EdgeInsets.all(17),
                             height: 30,
@@ -82,7 +83,7 @@ class _walletHomeState extends State<walletHome> {
                                 const SizedBox(
                                   width: 7,
                                 ),
-                                Text("Logout"),
+                                Text("Sign Out"),
                               ]),
                             ),
                           ],
