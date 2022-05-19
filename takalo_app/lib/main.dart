@@ -7,6 +7,7 @@ import 'package:takalo_app/presentation/core/model/app_state.dart';
 import 'package:takalo_app/presentation/core/model/cart_item.dart';
 import 'package:takalo_app/presentation/pages/cover.dart';
 import 'package:takalo_app/presentation/pages/deposit.dart';
+import 'package:takalo_app/presentation/pages/home_view.dart';
 import 'package:takalo_app/presentation/pages/login.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
 
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
           '/login': (context) => const Authentication(),
           '/home': (context) => WalletHome(),
           '/deposit': (context) => const AddView(),
-          // '/cart': (context) => CartList(),
+          '/list': (context) => HomeView(),
           // '/upload': (context) => UploadImageScreen(),
         },
         initialRoute: FirebaseAuth.instance.currentUser == null ? "/" : "/home",

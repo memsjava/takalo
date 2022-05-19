@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
+import 'package:takalo_app/presentation/pages/register.dart';
 
 class Authentication extends StatefulWidget {
   const Authentication({Key? key}) : super(key: key);
@@ -124,15 +125,11 @@ class _AuthenticationState extends State<Authentication> {
                         color: Colors.white),
                     child: MaterialButton(
                       onPressed: () async {
-                        bool shouldNavigate = await register(
-                            _emailField.text, _passwordField.text);
-                        if (shouldNavigate) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WalletHome()),
-                          );
-                        }
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Registration()),
+                        );
                       },
                       child: const Text("Register"),
                     ),

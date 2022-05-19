@@ -16,7 +16,6 @@ class _HomeViewState extends State<HomeView> {
   double bitcoin = 0.0;
   double ethereum = 0.0;
   double tether = 0.0;
-
   @override
   void initState() {
     getValues();
@@ -38,6 +37,8 @@ class _HomeViewState extends State<HomeView> {
         return amount * ethereum;
       } else if (id == 'tether') {
         return amount * tether;
+      } else {
+        return amount;
       }
     }
 

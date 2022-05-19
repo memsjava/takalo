@@ -74,7 +74,7 @@ class _AddViewState extends State<AddView> {
                       borderRadius: BorderRadius.all(Radius.circular(20)),
                       color: Colors.white,
                       image: DecorationImage(
-                          image: AssetImage('asset/images/cloud.png'),
+                          image: AssetImage('asset/images/btc.png'),
                           fit: BoxFit.contain),
                     ),
                     child: InkWell(
