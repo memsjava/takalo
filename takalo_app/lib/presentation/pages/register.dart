@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_final_fields
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:takalo_app/application/net/api_firebase.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
@@ -11,8 +12,10 @@ class Registration extends StatefulWidget {
 }
 
 class _RegistrationState extends State<Registration> {
+  TextEditingController _nameField = TextEditingController();
   TextEditingController _emailField = TextEditingController();
   TextEditingController _passwordField = TextEditingController();
+  TextEditingController _passwordField2 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +52,23 @@ class _RegistrationState extends State<Registration> {
                     width: 320,
                     child: Column(children: [
                       TextFormField(
+                        controller: _nameField,
+                        decoration: const InputDecoration(
+                            hintText: 'rakoto',
+                            labelText: 'Pseudo',
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.blueAccent, width: 1.0),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
+                            ),
+                            hintStyle: TextStyle(color: Colors.orange),
+                            labelStyle: TextStyle(color: Colors.blue)),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      TextFormField(
                         controller: _emailField,
                         decoration: const InputDecoration(
                             hintText: 'something@gmail.com',
@@ -80,6 +100,24 @@ class _RegistrationState extends State<Registration> {
                             hintStyle: TextStyle(color: Colors.orange),
                             labelStyle: TextStyle(color: Colors.blue)),
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      TextFormField(
+                        controller: _passwordField2,
+                        obscureText: true,
+                        decoration: const InputDecoration(
+                            hintText: 'password',
+                            labelText: 'Password_Confirm',
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.blueAccent, width: 1.0),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
+                            ),
+                            hintStyle: TextStyle(color: Colors.orange),
+                            labelStyle: TextStyle(color: Colors.blue)),
+                      ),
                     ]),
                   ),
                   SizedBox(
@@ -90,20 +128,29 @@ class _RegistrationState extends State<Registration> {
                     height: 48,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
-                        color: Colors.white),
+                        color: Colors.purple),
                     child: MaterialButton(
                       onPressed: () async {
-                        bool shouldNavigate = await register(
-                            _emailField.text, _passwordField.text);
-                        if (shouldNavigate) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WalletHome()),
-                          );
+                        if (_passwordField.text == _passwordField2.text) {
+                          bool shouldNavigate = await register(
+                              _emailField.text, _passwordField.text);
+                          if (shouldNavigate) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WalletHome()),
+                            );
+                          } else {
+                            if (kDebugMode) {
+                              print("password should same");
+                            }
+                          }
                         }
                       },
-                      child: const Text("Register"),
+                      child: const Text(
+                        "Register",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ],

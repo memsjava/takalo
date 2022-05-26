@@ -124,18 +124,25 @@ class _CoverHome extends State<CoverHome> {
                 SizedBox(
                   height: 10,
                 ),
-                Center(
-                  child: Text(
-                    "Create an account",
-                    style: TextStyle(fontSize: 16),
+                InkWell(
+                  onTap: goToRegisterPage,
+                  child: Center(
+                    child: Text(
+                      "Create an account",
+                      style: TextStyle(fontSize: 16),
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           )
         ],
       ),
     );
+  }
+
+  void goToRegisterPage() {
+    Navigator.pushNamed(context, '/register');
   }
 
   void openHomePage() {

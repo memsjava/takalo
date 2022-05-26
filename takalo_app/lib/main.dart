@@ -10,6 +10,7 @@ import 'package:takalo_app/presentation/pages/deposit.dart';
 import 'package:takalo_app/presentation/pages/home_view.dart';
 import 'package:takalo_app/presentation/pages/login.dart';
 import 'package:takalo_app/presentation/pages/home.dart';
+import 'package:takalo_app/presentation/pages/register.dart';
 
 import 'package:takalo_app/reducer/reducers.dart';
 
@@ -60,9 +61,10 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => const CoverHome(),
           '/login': (context) => const Authentication(),
+          '/register': (context) => const Registration(),
           '/home': (context) => WalletHome(),
           '/deposit': (context) => const AddView(),
-          '/list': (context) => HomeView(),
+          '/list': (context) => const HomeView(),
           // '/upload': (context) => UploadImageScreen(),
         },
         initialRoute: FirebaseAuth.instance.currentUser == null ? "/" : "/home",
