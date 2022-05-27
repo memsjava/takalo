@@ -1,0 +1,74 @@
+{
+    "BTC": {
+        "coin": "BTC",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "e37ca02e9c403d8da03ba53bbb083ee9dca62361db73cc566f8ac0bdef089077",
+        "public_key": "04b9c5dadf511968970052decffbc31bb0204ae68badaf6bbd020ccd05230710646e51460c56ee141be1219a7917c11e994dd8f00e0cbc3084ba8eda1a8cd201f9",
+        "xprivate_key": "xprv9s21ZrQH143K3KbNha7yv7zSkk7RFGTUisrojDcqMaj6KMPUfgzhmnW2PW952BxSTJ2ynCkaJdcDQeDsK3Bi2i8RfM8dB73gxk5zcWbNuQU",
+        "xpublic_key": "xpub661MyMwAqRbcFofqobezHFwBJmwuejBL66nQXc2SuvG5C9idDEJxKapWEnoD7WE3Wuiqnsg9fMEiK3VGpB4y2EvpYzUMUk8NZ6Y7WAcnAd4",
+        "address": "12uHAMkkBrSWx9uc2BhJWxDvvWgawvPziq",
+        "wif": "L4qv46kwxmoy2MMGfvZFcKh7EyGFXC3NkCP4vqsSFcB4jCLr61Ts",
+        "children": [],
+        "xpublic_key_prime": "xpub683PXXujEQ9uR85WekW24FKN2HUzraqPySEcE2p9bRFa8feEraEUWu18xrLtsVjCAZxPESdWKKkkJ5zj9oH4xLnmbub2risvwcrweZ8TfYW"
+    },
+    "BCH": {
+        "coin": "BCH",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "e37ca02e9c403d8da03ba53bbb083ee9dca62361db73cc566f8ac0bdef089077",
+        "public_key": "04b9c5dadf511968970052decffbc31bb0204ae68badaf6bbd020ccd05230710646e51460c56ee141be1219a7917c11e994dd8f00e0cbc3084ba8eda1a8cd201f9",
+        "xprivate_key": "xprv9s21ZrQH143K3KbNha7yv7zSkk7RFGTUisrojDcqMaj6KMPUfgzhmnW2PW952BxSTJ2ynCkaJdcDQeDsK3Bi2i8RfM8dB73gxk5zcWbNuQU",
+        "xpublic_key": "xpub661MyMwAqRbcFofqobezHFwBJmwuejBL66nQXc2SuvG5C9idDEJxKapWEnoD7WE3Wuiqnsg9fMEiK3VGpB4y2EvpYzUMUk8NZ6Y7WAcnAd4",
+        "address": "CJNAjQ6p4uR3rHp2hw2E6TqxYdtzvQpUhg",
+        "wif": "L4qv46kwxmoy2MMGfvZFcKh7EyGFXC3NkCP4vqsSFcB4jCLr61Ts",
+        "children": [],
+        "xpublic_key_prime": "xpub683PXXujEQ9uR85WekW24FKN2HUzraqPySEcE2p9bRFa8feEraEUWu18xrLtsVjCAZxPESdWKKkkJ5zj9oH4xLnmbub2risvwcrweZ8TfYW"
+    },
+    "ETH": {
+        "coin": "ETH",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "0488ade403a6695a9380000000284f4713316f7b18807dfec0b07c895d16677616bc220610f23048dc63c12206004b8b172770a91b0ff93f58a35edfaddb0ed252b81e534a70a31a0038d8118aaa",
+        "public_key": "0488b21e03a6695a9380000000284f4713316f7b18807dfec0b07c895d16677616bc220610f23048dc63c12206035c42ca54bdfff0c2c9d61cec74227cb43cc9d4c95d72ef385a6f3240fe247843",
+        "xprivate_key": "xprv9ytMqQyogptMS8E1r4dvmusCu6aabZeqmTPR6qC5v6N2emmeVM7Ar29xkGm14SEXi18Jjd56KMZQh8rSDE82W8Rm7nvxbFK47SnqE7qbkQN",
+        "xpublic_key": "xpub6CsiEvWhXCSeecJUx6Aw93owT8R512Nh8gK1uDbhURu1Xa6o2tRRPpUSbZrshwDJX2H25gYSo82wUaATNuoPxq3EZoWpZR4Pydz5wytf2Ei",
+        "address": "0x851e3fe4e80a8be5014ee896be9d5a88ffd5ebb0",
+        "wif": "",
+        "children": [],
+        "xpublic_key_prime": "xpub6GaLXekXPtjNJBRCBycLiCupj1wT981mhUthfE2hnPJw5Jm6DXAQtJVrR4VCxdiiNUBngU43s7zw46AzaQdsG3Pqfn2XLLPN55RreJibovo"
+    },
+    "LTC": {
+        "coin": "LTC",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "e37ca02e9c403d8da03ba53bbb083ee9dca62361db73cc566f8ac0bdef089077",
+        "public_key": "04b9c5dadf511968970052decffbc31bb0204ae68badaf6bbd020ccd05230710646e51460c56ee141be1219a7917c11e994dd8f00e0cbc3084ba8eda1a8cd201f9",
+        "xprivate_key": "xprv9s21ZrQH143K3KbNha7yv7zSkk7RFGTUisrojDcqMaj6KMPUfgzhmnW2PW952BxSTJ2ynCkaJdcDQeDsK3Bi2i8RfM8dB73gxk5zcWbNuQU",
+        "xpublic_key": "xpub661MyMwAqRbcFofqobezHFwBJmwuejBL66nQXc2SuvG5C9idDEJxKapWEnoD7WE3Wuiqnsg9fMEiK3VGpB4y2EvpYzUMUk8NZ6Y7WAcnAd4",
+        "address": "LM8ERa4aGWgaCxbmCKgbnyHh8j3s7SLk9a",
+        "wif": "TAgBVr48N9nZoBz9DZW7pgEVBpuZbH4GZQHKneVypaMEF5webMYG",
+        "children": [],
+        "xpublic_key_prime": "xpub683PXXujEQ9uR85WekW24FKN2HUzraqPySEcE2p9bRFa8feEraEUWu18xrLtsVjCAZxPESdWKKkkJ5zj9oH4xLnmbub2risvwcrweZ8TfYW"
+    },
+    "DASH": {
+        "coin": "DASH",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "e37ca02e9c403d8da03ba53bbb083ee9dca62361db73cc566f8ac0bdef089077",
+        "public_key": "04b9c5dadf511968970052decffbc31bb0204ae68badaf6bbd020ccd05230710646e51460c56ee141be1219a7917c11e994dd8f00e0cbc3084ba8eda1a8cd201f9",
+        "xprivate_key": "xprv9s21ZrQH143K3KbNha7yv7zSkk7RFGTUisrojDcqMaj6KMPUfgzhmnW2PW952BxSTJ2ynCkaJdcDQeDsK3Bi2i8RfM8dB73gxk5zcWbNuQU",
+        "xpublic_key": "xpub661MyMwAqRbcFofqobezHFwBJmwuejBL66nQXc2SuvG5C9idDEJxKapWEnoD7WE3Wuiqnsg9fMEiK3VGpB4y2EvpYzUMUk8NZ6Y7WAcnAd4",
+        "address": "Xcb7zcQe9Zf776WBt51XNUuikrGGxXb89W",
+        "wif": "XJuqWN9KGTSR5gMehgZ87Yt89zXpxzed7miyTNCdZyTA8MW5bzf5",
+        "children": [],
+        "xpublic_key_prime": "xpub683PXXujEQ9uR85WekW24FKN2HUzraqPySEcE2p9bRFa8feEraEUWu18xrLtsVjCAZxPESdWKKkkJ5zj9oH4xLnmbub2risvwcrweZ8TfYW"
+    },
+    "DOGE": {
+        "coin": "DOGE",
+        "seed": "capable cruise protect diamond detail fly patch speed enemy insect industry atom",
+        "private_key": "e37ca02e9c403d8da03ba53bbb083ee9dca62361db73cc566f8ac0bdef089077",
+        "public_key": "04b9c5dadf511968970052decffbc31bb0204ae68badaf6bbd020ccd05230710646e51460c56ee141be1219a7917c11e994dd8f00e0cbc3084ba8eda1a8cd201f9",
+        "xprivate_key": "dgpv51eADS3spNJh9Bt44eqybVgW6WimtBJ8qxCiwodhS1zoCJ1Pk8HYMLVZ2cjv6M2vMTiS6zojqwdC5TLz6MDgkLPCpX4rKUBbxNPBAgMVwjy",
+        "xpublic_key": "dgub8kXBZ7ymNWy2S3YD6tTwiME6Z56QiJKr8Yyw6v2gE93okM869tqJzduCbsJCVUdWWeEjEmNTGMSfKmoJNuii24nNagss11uUugpjDhi5UkV",
+        "address": "D73NhchPVGLoVA6Ckmgs4iPXoeQtHnWfvs",
+        "wif": "QWEqCwZwDPJ6FskKGCQ3VYXii1HpZkBBdT4yiUGGyxnRB8JQPpYr",
+        "children": [],
+        "xpublic_key_prime": "dgub8nZD7HxKmVXKbMwsx3JyVLcHGadVv9yv1tS8oLpNue3Jgs3hoEkqBx5qKvqtFU8fAJUGgLKovKxhJpJkiXvoxAeKdbzYNzf3JD9ZN1CUH24"
+    }
+}

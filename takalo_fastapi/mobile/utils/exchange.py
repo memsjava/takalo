@@ -25,7 +25,7 @@ class mobile():
     def transfert(self, type_, source_number, targt_number, amount):
         err = None
         txId = None
-        reqTime = datetime.utcnow().isoformat()[:-3]+'Z'
+        reqTime = datetime.utcnow().isoformat()[:-3] + 'Z'
         if type_ == "telma":
             transaction = Transaction(
                 token=self._token,
