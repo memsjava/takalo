@@ -20,3 +20,7 @@ d ho hitanao ao daholo ny liens. Mbola vitsi2 izy ao fa ampiana miandalana e
 ### 3 Maniry ny hiketrika hiaraka aminay ve toi?
 Andefaso message skype ny tenako @grand_eric io fa raisina soa amantsara toi.
 
+### 4 Fisaorana sy ressouce ampiasaina ato. 
+1. fastapi https://github.com/tiangolo/fastapi
+2. Module mvola python, namboarin'i @rivo2302 <= Malagasy io a. https://github.com/rivo2302/Mvola
+ === ho ampiana miandalana eto refa mazotozot izahay ===
